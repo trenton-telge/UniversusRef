@@ -383,13 +383,15 @@ export const App = () => {
               </View>
               <View style={styles.listItemTextContainer}>
                 <Text style={[styles.textXS, styles.textLight]}>
-                  Your Nx Cloud remote cache setup is almost complete.
+                  Your workspace is connected to Nx Cloud.
                 </Text>
               </View>
               <TouchableOpacity
                 style={styles.connectToCloudButton}
                 onPress={() => {
-                  Linking.openURL('https://cloud.nx.app/connect/Hoeg4eW9qR');
+                  Linking.openURL(
+                    'https://nx.dev/ci/intro/ci-with-nx#learn-about-nx-on-ci'
+                  );
                 }}
               >
                 <Text
@@ -399,7 +401,7 @@ export const App = () => {
                     styles.textCenter,
                   ]}
                 >
-                  Click here to finish
+                  Learn about Nx on CI
                 </Text>
               </TouchableOpacity>
             </View>
